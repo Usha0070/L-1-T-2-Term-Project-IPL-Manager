@@ -1,0 +1,21 @@
+# Compiled output
+target/
+*.class
+
+# Maven wrapper jar (optional — keep .properties)
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Backup data files
+players_backup.txt

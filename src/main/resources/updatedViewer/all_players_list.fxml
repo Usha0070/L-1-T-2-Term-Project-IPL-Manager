@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demonew.updatedViewer.AllPlayerListController"
+      alignment="CENTER" spacing="20"
+      prefHeight="900" prefWidth="900"
+      style="-fx-background-color: linear-gradient(to bottom, #1E3C72, #2A5298); -fx-padding: 40;">
+
+    <!-- Title -->
+    <Label text="ALL PLAYERS LIST"
+           style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: white;" />
+
+    <!-- Search Field -->
+    <TextField fx:id="searchField" promptText="Search Players"
+               style="-fx-background-color: white; -fx-border-color: #2A5298; -fx-border-radius: 5;
+                      -fx-border-width: 2; -fx-font-size: 14px; -fx-pref-width: 600; -fx-padding: 5;" />
+
+    <!-- TableView -->
+    <TableView fx:id="playersTableView" prefWidth="750" prefHeight="600"
+               style="-fx-background-color: rgba(0, 50, 100, 0.6); -fx-border-color: white; -fx-border-width: 2;
+                      -fx-border-radius: 10; -fx-font-family: 'Arial'; -fx-font-size: 12px; -fx-text-fill: white;">
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+        <!-- Table columns will be added dynamically in the controller -->
+    </TableView>
+
+</VBox>

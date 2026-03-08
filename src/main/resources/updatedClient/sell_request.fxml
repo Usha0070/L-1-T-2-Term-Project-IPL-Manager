@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demonew.updatedClient.SellRequestController"
+      spacing="10" style="-fx-padding: 15;">
+    <Label text="Your Club's Players" style="-fx-font-size: 16; -fx-font-weight: bold;"/>
+    <TableView fx:id="clubPlayersTable" VBox.vgrow="ALWAYS"/>
+    <HBox spacing="10">
+        <Button text="List Player for Sale" fx:id="sellPlayerButton" onAction="#sellPlayer"/>
+        <Button text="← Back to Dashboard" onAction="#goBack"/>
+    </HBox>
+</VBox>

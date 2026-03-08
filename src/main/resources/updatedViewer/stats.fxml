@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demonew.updatedViewer.StatController"
+      alignment="CENTER" spacing="20" prefWidth="900" prefHeight="900"
+      style="-fx-background-color: linear-gradient(to bottom, #1E3C72, #2A5298); -fx-padding: 30;">
+
+    <!-- Title -->
+    <Label text="STATISTICS"
+           style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: white;" />
+
+    <!-- Highest Attributes Section -->
+    <VBox spacing="15" alignment="CENTER"
+          style="-fx-background-color: rgba(0, 50, 100, 0.6); -fx-padding: 20;
+                 -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 10;">
+        <Label text="HIGHEST ATTRIBUTES"
+               style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" />
+        <TableView fx:id="highestAttributesTable" prefHeight="250" prefWidth="750"
+                   style="-fx-background-color: rgba(0, 50, 100, 0.6); -fx-border-color: white;
+                          -fx-border-width: 2; -fx-border-radius: 10; -fx-font-family: 'Arial';
+                          -fx-font-size: 14px; -fx-text-fill: white;">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </VBox>
+
+    <!-- Lowest Attributes Section -->
+    <VBox spacing="15" alignment="CENTER"
+          style="-fx-background-color: rgba(0, 50, 100, 0.6); -fx-padding: 20;
+                 -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 10;">
+        <Label text="LOWEST ATTRIBUTES"
+               style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" />
+        <TableView fx:id="lowestAttributesTable" prefHeight="250" prefWidth="750"
+                   style="-fx-background-color: rgba(0, 50, 100, 0.6); -fx-border-color: white;
+                          -fx-border-width: 2; -fx-border-radius: 10; -fx-font-family: 'Arial';
+                          -fx-font-size: 14px; -fx-text-fill: white;">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </VBox>
+
+</VBox>

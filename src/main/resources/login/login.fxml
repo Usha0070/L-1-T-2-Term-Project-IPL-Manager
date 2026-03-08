@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="900.0" prefWidth="900.0" spacing="20" style="-fx-background-color: linear-gradient(to bottom, #1E3C72, #2A5298); -fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demonew.login.LoginController">
+   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Images/iplLogo.png" />
+      </image>
+   </ImageView>
+    <Label style="-fx-font-size: 26px; -fx-text-fill: white; -fx-font-weight: bold;" text="LOGIN SYSTEM" />
+    <Button onAction="#loginAsUser" style="-fx-background-color: #2A5298; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-cursor: hand; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-padding: 10 30; -fx-pref-width: 350;" text="LOGIN AS USER" />
+    <Button onAction="#loginAsManager" style="-fx-background-color: #2A5298; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-cursor: hand; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-padding: 10 30; -fx-pref-width: 350;" text="LOGIN AS CLUB MANAGER" />
+   <ImageView fitHeight="434.0" fitWidth="841.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Images/iplTeams.jpg" />
+      </image>
+   </ImageView>
+</VBox>

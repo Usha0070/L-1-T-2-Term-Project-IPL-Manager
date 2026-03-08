@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="1000.0" prefWidth="800.0" spacing="20"
+      style="-fx-background-color: #FFE082; -fx-padding: 30; -fx-border-color: #FF8F00; -fx-border-width: 4; -fx-border-radius: 10;"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demonew.server.ServerController">
+
+    <!-- Top Section: Local Host Information -->
+    <VBox alignment="CENTER" spacing="10">
+        <Label style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #D84315;"
+               text="LOCAL HOST LOCATION: 127.0.0.1" />
+        <Label fx:id="serverInfoLabel" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #FF6F00;"
+               text="SERVER RUNNING ON PORT: 44444" />
+    </VBox>
+
+    <!-- Registered Clubs and Players Section -->
+    <HBox alignment="CENTER" spacing="50" style="-fx-padding: 10;">
+        <Label fx:id="registeredClubsLabel" text="Registered Clubs: 0"
+               style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #3E2723;" />
+        <Label fx:id="registeredPlayersLabel" text="Registered Players: 0"
+               style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #3E2723;" />
+    </HBox>
+
+    <!-- Add Player Button Section -->
+    <HBox alignment="CENTER_RIGHT" spacing="10" style="-fx-padding: 10;">
+        <Button onAction="#openAddPlayerWindow" text="Add Player"
+                style="-fx-background-color: #FF8F00; -fx-text-fill: white; -fx-font-size: 14px;
+                       -fx-font-weight: bold; -fx-border-color: white; -fx-border-radius: 5;" />
+    </HBox>
+
+    <!-- Active Clients Section -->
+    <VBox spacing="10">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #BF360C;"
+               text="Active Clients:" />
+        <ListView fx:id="clientsListView" prefHeight="200.0" prefWidth="750.0"
+                  style="-fx-background-color: #FBE9E7; -fx-border-color: #BF360C;
+                         -fx-border-width: 2; -fx-border-radius: 5;" />
+    </VBox>
+
+    <!-- Players for Sale Section -->
+    <VBox spacing="10">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #BF360C;"
+               text="Players for Sale:" />
+        <ListView fx:id="playersListView" prefHeight="200.0" prefWidth="750.0"
+                  style="-fx-background-color: #FBE9E7; -fx-border-color: #BF360C;
+                         -fx-border-width: 2; -fx-border-radius: 5;" />
+    </VBox>
+
+    <!-- Server Logs Section -->
+    <VBox spacing="10">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #BF360C;"
+               text="Server Logs:" />
+        <TextArea fx:id="logArea" editable="false" prefHeight="250.0" prefWidth="750.0"
+                  style="-fx-background-color: #FBE9E7; -fx-border-color: #BF360C;
+                         -fx-border-width: 2; -fx-border-radius: 5; -fx-font-size: 14px;"
+                  wrapText="true" />
+    </VBox>
+
+</VBox>
