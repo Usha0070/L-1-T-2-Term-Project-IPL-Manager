@@ -2,14 +2,6 @@
 
 A multi-client real-time player transfer platform for IPL teams — built with **JavaFX** and **Java Socket Programming** as a Level 1 Term 2 project at BUET.
 
-## 🎬 Video Demonstration
-
-[![IPL Demo](https://img.shields.io/badge/YouTube-Demo%20Video-red?style=for-the-badge&logo=youtube)](#)
-
-> **Add your demo link here**
-
----
-
 ## 📌 About
 
 A networked desktop application where club managers can buy and sell IPL players in real-time across multiple connected clients. The server acts as admin, managing the player pool and broadcasting live transfer updates to all connected sessions simultaneously.
